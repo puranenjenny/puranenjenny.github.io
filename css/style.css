@@ -1,0 +1,282 @@
+body {
+    background-color: f3f2ef;
+}
+
+/*header ja navigointi säädöt*/
+.bg-cover {
+    background-size: cover !important;
+    height: 460px;
+}
+
+.navbar {
+    font-family: monospace;
+    font-weight: bold;
+    justify-content: flex-end!important;
+    float: right;
+}
+
+.navbar a{
+    color: #f3f2ef!important; 
+  }
+
+.navbar-dark{
+    color-scheme: #f3f2ef;
+}
+
+.dropdown-item {
+    font-family: monospace;
+    font-weight: bold;
+    color: #f3f2ef!important; 
+}
+
+.dropdown-item:hover {
+    background-color: #5D7365 !important;
+}
+
+
+.dropdown-menu {
+background-color: #43594F;
+}
+
+
+.otsikko1 {
+    padding-top: 130px;
+    font-family: "Brush Script MT";
+    color: f3f2ef;
+}
+
+.otsikko2 {
+    padding-bottom: 180px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: f3f2ef;
+}
+
+h1{
+    font-size: 50px;
+}
+
+h3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: #43594F;
+    font-weight: bold;
+}
+
+.logo{
+    width: auto;
+    height: 70px; 
+    float: left;
+}
+
+/*kontentti yleiset säädöt*/
+p {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #212b26;
+    font-size: 1em;
+    padding-left: 2px;
+    padding-right: 2px;
+}
+
+.vali{
+    height: 40px;
+}
+
+/*footer säädöt*/
+
+#footer {
+    background-color: #43594F;
+}
+
+.footernote1 {
+    color: #f3f2ef;
+    padding-top: 20px;
+    margin: 20px;
+    font-size: 1em;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.footernote2 {
+    color: #f3f2ef;
+    margin: 20px;
+    padding-bottom: 10px;
+}
+
+.nappi1{
+    background-color: #182622!important;
+    border-color: #182622!important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+/*index sivun kontentin erillissäädöt*/
+
+.otsikko3 {
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-weight: bold;
+    color: #43594F;
+    margin-top: 30px!important;
+    margin-bottom: 0!important;
+}
+
+.teksti3 {
+    margin-top: 0px!important;
+    margin-bottom: 0px!important;
+
+}
+.nappi2 {
+    background-color: #5D7365!important;
+    border-color: #5D7365!important;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;  
+    margin-bottom: 30px!important;
+}
+
+.rivi4 {
+    padding: 10px;
+}
+
+.luna3 .koru3 .tekstikentta{
+width: 600px!important;
+height: 399px!important;
+padding: 0px;
+}
+
+/*karusellin säädöt*/
+
+.image1 .image7 .image8 .carousel .carousel-item {
+    width: 600px!important;
+    height: 399px!important;
+}
+.carousel-inner > .item {
+    height: 400px;
+ }
+
+
+/*about sivun kontentin erillissäädöt*/
+
+.luna2 {
+    padding-top: 15px;
+}
+
+/*gallery sivun kontentin erillissäädöt*/
+/*css gridin säädöt*/
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(8, 5vw);
+    grid-gap: 8px;
+}
+
+.galleryimg {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.gallery-item-1 {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery-item-2 {
+    grid-column-start: 3;
+    grid-column-end: 5;
+    grid-row-start: 1;
+    grid-row-end: 3;
+}
+
+.gallery-item-3 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 1;
+    grid-row-end: 6;
+}
+
+.gallery-item-4 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 3;
+    grid-row-end: 6;
+}
+
+.gallery-item-5 {
+    grid-column-start: 1;
+    grid-column-end: 5;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+.gallery-item-6 {
+    grid-column-start: 5;
+    grid-column-end: 9;
+    grid-row-start: 6;
+    grid-row-end: 9;
+}
+
+/*alemman gallerian säädöt*/
+.row {
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 0 4px;
+  }
+  
+  .column {
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+  
+  .column img {
+    margin-top: 8px;
+    vertical-align: middle;
+    width: 100%;
+  }
+  
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 50%;
+      flex: 50%;
+      max-width: 50%;
+    }
+  }
+  
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+
+/*artwork/creation sivun kontentin erillissäädöt*/
+.insta {
+    width: 22px;
+    height: 22px;
+}
+
+#thislink {
+    text-decoration: none;   
+}
+
+/*connect sivun kontentin erillissäädöt*/
+/*flexboxin säädöt*/
+
+.flex-container-1 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    padding: 60px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: #212b26;
+    font-size: 1em;
+}
+
+.luna4 {
+    height: 500px;
+    width: auto;
+    padding-left: 50px;
+    filter: opacity(86%);
+}
