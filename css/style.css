@@ -280,14 +280,3 @@ padding: 0px;
     padding-left: 50px;
     filter: opacity(86%);
 }
-
-.bpw-message-container, .bpw-message-group {
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-direction: column;
-    flex-direction: column;
-    width: 90%;
-}
