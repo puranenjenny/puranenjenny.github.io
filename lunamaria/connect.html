@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>Luna Maria - Portfolio - Connect</title> 
+    <link rel="shortcut icon" href="img/favicon.ico"> 
+    <meta charset="UTF-8">
+    <meta name="description" content="HTML sivupohja">
+    <meta name="author" content="Jenny Puranen">
+    <meta name="keywords" content="luna, maria, jewelry, art, portfolio">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!--tärkeät linkit boostrapin muotoiluihin jne-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+<!--oma css-->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+<!--header alkaa-->
+<div class="container-fluid p-0 text-center">
+  <div style="background: url(img/bannerkuva.jpeg)" class="bg-cover text-white">
+    <div class="container-fluid">
+
+        <div class="row">
+            <div class="col-1">  <img src="img/logo.png" alt="logo" style="width: auto;;height:70px; float: left;"></div>
+            <div class="col"></div>
+            <div class="col-5">
+
+<!--läpinäkyvä navigointipalkki-->
+        <nav class="navbar navbar-expand-sm navbar-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" ></a>
+              <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#collapsibleNavbar">
+                <span class="navbar-toggler-icon"></span>
+              </button>
+              <div class="collapse navbar-collapse" id="collapsibleNavbar">
+                <ul class="navbar-nav">
+                  <li class="nav-item">
+                    <a class="nav-link" href="index.html">HOME</a>
+                  </li> 
+<!--dropdown valikko navigoinnissa-->        
+                  <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">ARTWORK</a>
+                    <ul class="dropdown-menu">
+                      <li><a class="dropdown-item" href="artwork.html">CREATION</a></li>
+                      <li><a class="dropdown-item" href="gallery.html">GALLERY</a></li>
+                    </ul>
+                  </li>
+
+                  <li class="nav-item">
+                    <a class="nav-link" href="about.html">ABOUT</a>
+                  </li>
+                  <li class="nav-item">
+                    <a class="nav-link" href="connect.html">CONNECT</a>
+                  </li>  
+                 
+                </ul>
+              </div>
+            </div>
+          </nav>
+            </div>
+        </div> 
+<!--navigointi loppuu-->  
+
+<!--otsikko-->
+<div class="row otsikko1">
+                            <h4>Creations of</h4> </div>
+<div class="row otsikko2">  <h1>LUNA MARIA</h1> </div>           
+      </div>
+  </div>
+</div>
+<!--header loppuu-->
+
+<!--loin rivin 'väli' jota käytän luomaan tilaa elementtien väliin nopeasti ja helposti-->
+<div class="row vali"></div>
+
+<!--tästä alkaa sivun kontentti-->
+<div class="container-fluid flex-container1" id="kontentti">
+
+  <div class="row">
+      <div class="col-4"></div>
+      <div class="col text-center"> <h3>Connect</h3></div>
+      <div class="col-4"></div> 
+  </div>
+
+  <div class="row">
+    <div class="col-3"></div>
+    <div class="col text-center"> <p>Interested in commissioning me for an art project?
+      If you have any questions, don't hesitate to ask! I am currently available for assignments worldwide. ♥</p></div>
+    <div class="col-3"></div> 
+</div>
+
+<!--tästä alkaa flexbox-->
+  <div class="flex-container-1">
+
+    <div class="box1">
+
+<!--tästä alkaa lomake-->
+      <form class="form">
+        <div class="id">
+        <div class="name">
+            <label for="name">Name</label> <br>
+            <input id="name" type="text" name="name"></div><br>
+
+        <div class="email">
+            <label for="email">Email</label> <br>
+            <input id="email" type="text" name="email" required></div></div> <br>
+
+      <div class="subject">
+        <label for="subject">Subject</label><br>
+        <input id="subject" type="text" name="subject"></div><br>
+
+      <div class="content">
+        <label id="contect" for="content">Message</label> <br>
+        <textarea name="content" id="" cols="30" rows="10" placeholder="This is currently not in use, please send me an email instead! puranenjenny@gmail.com"></textarea> <br><br>
+        <button type="submit" class="btn btn-success nappi2">SEND TO LUNA</button>
+
+      </div>
+      </form>
+    </div>
+       
+    <div class="box2">
+        <img src="img/luna4.jpeg" alt="luna4" class="luna4">
+    </div>
+
+  </div>
+</div>
+
+<div class="row vali"></div>
+
+
+<!--kontentti loppuu-->
+
+
+<!--footer-->
+
+<div class="container-fluid" id="footer">
+<div class="row text-center">   <p class="footernote1">Interested in commissioning me for an art project? I am currently available for assignments worldwide.</p> </div>
+
+<div class="row text-center"> 
+<div class="col-5"></div>
+<div class="col-2"><a href="connect.html" class="btn btn-success nappi1">Get in touch</a></div>
+<div class="col-5"></div>
+<div class="row text-center"><p class="footernote2"><i>Copyright © 2023 Luna Maria</i></p></div>
+</div>
+
+</body>
+
+</html>
