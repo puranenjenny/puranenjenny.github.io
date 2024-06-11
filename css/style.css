@@ -2,12 +2,7 @@
 
 :root {
   --color-primary: #28242b;
-  --color-secondary: #504F59;
-  --color-light: #F2EAE4;
-  --color-accent: #D9CCC5;
-  --color-bg: #001118;
   --color-font-light: #ffffff;
-  --color-font-dark: #ffffff;
 }
 
 /* general */
@@ -97,7 +92,7 @@ main {
 
 p {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-  color: var(--color-font-dark);
+  color: var(--color-font-light);
   font-size: 1em;
   padding-left: 2px;
   padding-right: 2px;
@@ -124,7 +119,7 @@ p {
 }
 
 .teksti1 {
-  color: var(--color-font-dark);
+  color: var(--color-font-light);
   font-size: 1.2em;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
@@ -144,10 +139,8 @@ p {
 h1 {
   font-size: 50px;
   font-family: Comfortaa, sans-serif;
-  color: var(--color-font-dark);
+  color: var(--color-font-light);
 }
-
-
 
 /* footer */
 #footer {
