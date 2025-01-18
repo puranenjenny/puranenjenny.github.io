@@ -96,6 +96,7 @@ p {
   font-size: 1em;
   padding-left: 2px;
   padding-right: 2px;
+  color: #e0e0e0;
 }
 
 .otsikko1 {
@@ -177,7 +178,7 @@ a {
 
 a:hover {
   color: #ffffff;
-  text-decoration: underline;
+  text-decoration: none;
 }
 
 /* index page */
@@ -218,6 +219,10 @@ a:hover {
   width: 50%;
 }
 
+.column3 {
+  float: middle;
+  width: 100%;
+}
 
 .row:after {
   content: "";
@@ -225,23 +230,31 @@ a:hover {
   clear: both;
 }
 
+.portfoliocontent, .portfoliocontent2, .portfoliocontent3 {
+  background-color: #3d3542;
+  padding: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.portfoliocontent:hover, .portfoliocontent2:hover, .portfoliocontent3:hover {
+  transform: scale(1.05); 
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4); 
+}
+
 .portfoliocontent {
-  background-color: #3d3542;
   max-width: 300px;
-  padding: 10px;
+  border-radius: 8px;
 }
 
-.portfoliocontent2 {
-  background-color: #3d3542;
+.portfoliocontent2, .portfoliocontent3 {
   max-width: 600px;
-  padding: 10px;
+  border-radius: 8px;
 }
 
-
-
-.portfoliocontent h4 {
+.portfoliocontent h4, .portfoliocontent2 h4, .portfoliocontent3 h4 {
   line-height: 26px;
-  font-size: 20px;
+  font-size: 22px;
   color: #ffffff;
   margin-bottom: 10px;
   margin-top: -8px;
@@ -249,20 +262,19 @@ a:hover {
 
 .portfoliocontent p, .portfoliocontent2 p, .portfoliocontent3 p {
   margin-bottom: 0;
+  color: #e0e0e0;
+  font-size: 1em;
+  line-height: 1.5;
 }
 
-.portfoliocontent img {
+.portfoliocontent img, .portfoliocontent2 img, .portfoliocontent3 img {
   width: 100px;
   height: auto;
+  border-radius: 8px;
 }
-
 
 .carousel-item img {
   transform: none !important;
-}
-
-.carousel-item img {
-  transition: none !important;
 }
 
 
@@ -278,15 +290,14 @@ a:hover {
   }
 }
 
-
 @media screen and (max-width: 900px) {
-  .column2 {
+  .column2 , .column3 {
     width: 73%;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .column2 {
+  .column2 , .column3 {
     width: 73%;
   }
 }
