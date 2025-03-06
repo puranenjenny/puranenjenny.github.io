@@ -63,6 +63,7 @@
     </div>
   </div>
 
+<div id="content">
   <!--content-->
   <main class="flex-fill d-flex align-items-center">
     <div class="container text-white">
@@ -86,7 +87,11 @@
       </div>
       <div class="row space"></div>
     </div>
+
   </main>
+
+
+</div>
 
   <!--footer-->
   <footer class="text-white text-center p-3" id="footer">
@@ -100,7 +105,7 @@
         </a>
       </p>
     </div>
-    <p class="footernote2"><i>Copyright © Jenny Puranen</i></p>
+    <p class="footernote2"><i>Jenny Puranen © 2025</i></p>
   </footer>
 
   <!-- Bootstrap JS Bundle with Popper -->
@@ -108,6 +113,76 @@
     integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
     crossorigin="anonymous"></script>
 
+  <!--scroll
+  <script>
+    let pages = ["about.html", "project.html"];
+    let pageIndex = 0;
+    let isLoading = false;
+    let loadedSections = [{ main: document.querySelector("main"), url: "index.html" }];
+
+    document.addEventListener("scroll", () => {
+        let scrollPosition = window.scrollY + window.innerHeight;
+        let documentHeight = document.documentElement.scrollHeight;
+
+        if (!isLoading && scrollPosition >= documentHeight - 100) {
+            isLoading = true;
+            setTimeout(loadNextPage, 10);
+        }
+
+        updateURLOnScroll();
+    }, { capture: true });
+
+    function loadNextPage() {
+        if (pageIndex >= pages.length) return;
+        let nextPage = pages[pageIndex];
+        pageIndex++;
+
+        fetch(nextPage)
+            .then(response => response.text())
+            .then(html => {
+                let parser = new DOMParser();
+                let doc = parser.parseFromString(html, "text/html");
+                let mainContent = doc.querySelector("main");
+                let footerContent = doc.querySelector("footer");
+
+                if (mainContent) {
+                    document.body.appendChild(mainContent);
+                    loadedSections.push({ main: mainContent, url: nextPage });
+                    console.log(`${nextPage} - main added.`);
+                } else {
+                    console.error("Main-tag not found", nextPage);
+                }
+
+                if (footerContent) {
+                    document.body.appendChild(footerContent);
+                    console.log(`${nextPage} - footer added`);
+                } else {
+                    console.warn(`No footer: ${nextPage}`);
+                }
+
+                isLoading = false;
+            })
+            .catch(error => {
+                console.error("Error loading:", error);
+                isLoading = false;
+            });
+    }
+
+    function updateURLOnScroll() {
+        for (let section of loadedSections) {
+            let rect = section.main.getBoundingClientRect();
+            if (rect.top <= 50 && rect.bottom > 50) {
+                history.replaceState(null, "", section.url);
+                console.log(`URL updated: ${section.url}`);
+                break;
+            }
+        }
+    }
+</script>-->
+
+
+
+  
 </body>
 
 </html>
