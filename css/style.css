@@ -10,14 +10,12 @@
 
 /* general */
 
-
 html,
 body {
   height: 100%;
   margin: 0;
   overflow-x: hidden;
 }
-
 
 body {
   background-image: url('../img/bannerkuva.jpg'); /*img from Unsplash by Łukasz Łada (@lukaszlada)*/
@@ -40,20 +38,27 @@ main {
 }
 
 .space {
-  height: 150px;
+  height: 130px;
 }
 
 .space2 {
   height: 60px;
 }
 
-/* .nappi {
-  background-color: transparent !important;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-  color: var(--color-font-light);
-  border: none;
-  text-align: center;
-}  */
+/* scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #3d3542; 
+  border-radius: 5px;
+  border: 0px;
+}
 
 /* header and navigation */
 
@@ -72,7 +77,6 @@ main {
 .navbar {
   font-family: monospace;
   font-weight: bold;
-  justify-content: flex-end !important;
   float: right;
   padding: 10px;
 }
@@ -95,21 +99,21 @@ main {
 p {
   font-family: "Comfortaa", sans-serif;
   color: var(--color-font-light);
-  font-size: 0.9em;
+  font-size: 0.75em;
   padding-left: 2px;
   padding-right: 2px;
   color: #e0e0e0;
 }
 
 h3 {
-  font-size: 1.5em;
+  font-size: 1.3em;
   font-family: "Comfortaa", sans-serif;
   color: var(--color-font-light);
 }
 
 .teksti1 {
   color: var(--color-font-light);
-  font-size: 1em;
+  font-size: 0.8em;
   margin-top: 0px !important;
   margin-bottom: 0px !important;
 }
@@ -122,11 +126,11 @@ h3 {
 .teksti4 {
   margin-top: 0px !important;
   margin-bottom: 0px !important;
-  font-size: 1.2em;
+  font-size: 0.9em;
 }
 
 h1 {
-  font-size: 50px;
+  font-size: 30px;
   font-family: "Comfortaa", sans-serif;
   color: var(--color-font-light);
 }
@@ -140,16 +144,17 @@ h1 {
 .footernote1,
 .footernote2 {
   margin-top: 5px;
-  font-size: 1em;
+  font-size: 0.7em;
   color: var(--color-font-light);
 }
 
 .footernote2 {
-  font-size: 0.8em;
+  font-size: 0.7em;
 }
 
 #footer p {
   margin-bottom: 5px;
+  font-size: 0.7em;
 }
 
 .linkedin,
@@ -212,7 +217,7 @@ a:hover {
 
 .portfoliocontent, .portfoliocontent2, .portfoliocontent3 {
   background-color: #3d3542; 
-  padding: 10px;
+  padding: 20px;
   border-radius: 20px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -233,7 +238,6 @@ a:hover {
 
 .portfoliocontent2, .portfoliocontent3 {
   max-width: 600px;
-  padding: 20px;
 }
 
 .portfoliocontent h4 {
@@ -242,36 +246,37 @@ a:hover {
 
 .portfoliocontent h4, .portfoliocontent2 h4, .portfoliocontent3 h4 {
   line-height: 26px;
-  font-size: 22px;
+  font-size: 18px;
   color: #ffffff;
   margin-bottom: 10px;
+  padding: 0px;
 }
 
 .portfoliocontent p, .portfoliocontent2 p, .portfoliocontent3 p {
-  margin-bottom: 0;
+  margin: 0px;
+  padding: 0px;
   color: #e0e0e0;
   line-height: 1.5;
 }
 
-.portfoliocontent img, .portfoliocontent2 img, .portfoliocontent3 img {
-  padding-top: 10px;
-}
 
 .portfoliocontent2 img, .portfoliocontent3 img {
   display: block;
   position: relative;
-  width: 100%;
+  width: 80%;
   height: auto;
   border-radius: 20px; 
   border: 2px solid #a8a8a8;
   background-color: #3d3542; 
   padding: 0px;
   box-shadow: -10px 10px 0px rgba(0, 0, 0, 0.2);
+  margin: 0 auto;
 }
 
 .carousel-item img {
   transform: none !important;
 }
+
 
 @media screen and (max-width: 900px) {
   .column {
@@ -311,7 +316,7 @@ a:hover {
 }
 
 .cv-title {
-  font-size: 1.2em;
+  font-size: 1em;
   font-weight: 700;
   color: #ffffff;
   margin-bottom: 16px;
@@ -320,7 +325,7 @@ a:hover {
 
 .cv .cv-item h4 {
   line-height: 26px;
-  font-size: 1em;
+  font-size: 0.8em;
   color: #ffffff;
   margin-bottom: 0px;
 }
