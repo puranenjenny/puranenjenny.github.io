@@ -259,29 +259,22 @@ a:hover {
   line-height: 1.5;
 }
 
-.portfoliocontent2 img, .frame {
+.portfoliocontent2 img:not(.screen),
+.frame {
   display: block;
   position: relative;
   width: 80%;
   height: auto;
+  margin: 0 auto;
   border-radius: 20px; 
   border: 2px solid #a8a8a8;
   background-color: #3d3542; 
-  padding: 0px;
   box-shadow: -10px 10px 0px rgba(0, 0, 0, 0.2);
-  margin: 0 auto;
 }
 
-.portfoliocontent2 img,
-.portfoliocontent3 img {
-  display: block;
+.carousel-item {
   position: relative;
-  width: 80%;
-  height: auto;
-  margin: 0 auto;
 }
-
-
 
 
 /* Frame + screenshot overlay */
@@ -293,13 +286,15 @@ a:hover {
 .mockup .frame {
   width: 100%;
   display: block;
+  height: auto;
+  z-index: 0;
 }
 
 .mockup .screen {
   position: absolute;
   top: 9%;
-  left: 1.5%;
-  width: 96.5%;
+  left: 2%;
+  width: 95.8%;
   height: 85%;
   object-fit: cover;
   object-position: top left;
