@@ -4,4 +4,12 @@
     <loc>https://puranenjenny.dev/</loc>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://puranenjenny.dev/about.html</loc>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://puranenjenny.dev/project.html</loc>
+    <priority>0.8</priority>
+  </url>
 </urlset>
